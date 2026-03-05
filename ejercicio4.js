@@ -4,7 +4,7 @@ Dado los siguientes códigos, refactorízalos como consideres, si consideras que
 Primer código
 Tenemos una función que saca el nombre completo del usuario con el nombre y apellido*/
 
-var usuario = {
+const usuario = {
   nombre: "Pedro",
   apellido: "Sánchez",
   edad: 45,
@@ -19,8 +19,10 @@ function nombreUsuario(user) {
   return nombrCompleto;
 }
 
-/*
-/Segundo código
+//Honestamente de aquí solo cambiaría que fuese cnst ya que el valor no va a cambiar nunca
+
+
+/*Segundo código
 Tenemos una función que calcula el salario anual y el nombre del usuario
 const user = {
   name: "Pedro",
@@ -29,19 +31,21 @@ const user = {
   salary: 1000,
   profesion: "Barro man",
 };
-
+const MESES=12;
 function userData(user) {
-  const annualSalary = user.salary * 12;
+  const annualSalary = user.salary * MESES;
   const fullName = `${user.name} ${user.last}`;
-
+  
   return `Me llamo ${fullName} y cobro ${annualSalary}€ al año`;
 }
 
 console.log(userData(user));
+*/
 
+//Del segundo código solo cambiaría 
 
-Tercer código
-Si el usuario tiene 30 años y no es español, recibirá una ayuda del gobierno de 2000€
+/*Tercer código
+Si el usuario tiene 30 años y no es español, recibirá una ayuda del gobierno de */
 const user = {
   name: "Álvaro",
   last: "Morón",
@@ -49,9 +53,10 @@ const user = {
   nationality: "Morocco",
 };
 
+const EDAD_APTA_PAGA=30;
 function esExtrangero(user) {
   if (user.nationality != "España") {
-    if (user.age == "30") {
+    if (user.age== EDAD_APTA_PAGA) {
       return "Apto para la ayuda del gobierno";
     } else {
       return "No es apto para la ayuda del gobierno";
@@ -61,4 +66,6 @@ function esExtrangero(user) {
   }
 }
 
-console.log(esExtrangero(user));*/
+console.log(esExtrangero(user));
+
+//he añadido una constante para la edad.
