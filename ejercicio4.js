@@ -68,4 +68,4 @@ function esExtrangero(user) {
 
 console.log(esExtrangero(user));
 
-//he añadido una constante para la edad
+//he añadido una constante para la edad.
