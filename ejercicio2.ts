@@ -1,3 +1,5 @@
+//Partiendo del ejercicio 1, haz que la raza (race), solo pueda ser Husky, Labrador, Chucho
+
 interface Animal {
         name: string;
         canEat: boolean;
@@ -6,10 +8,11 @@ interface Animal {
         canFly: boolean;
 }
 
+type typeRace = "Husky" | "Labrador" | "Chucho";
 interface Bird extends Animal {}
 
 interface Dog extends Animal {
-        race: string;
+        race: typeRace;
         age: number;
 }
 
@@ -27,6 +30,6 @@ let doggie: Dog = {
         canEat: true,
         canSleep: true,
         canFly: true,
-        race: "Border Collie",
+        race: "Husky",
         age: 5,
 };
