@@ -40,9 +40,15 @@ let doggie: Dog = {
 };
 
 type catType = Pick<Animal, "name" | "color" | "canSleep">;
-
+type snakeType = Pick<Animal, "canEat" | "canDrink" | "canSleep">;
 let cat: catType = {
         name: "Niko",
         color: "Naranja",
+        canSleep: true,
+};
+
+let snake: snakeType = {
+        canDrink: true,
+        canEat: true,
         canSleep: true,
 };
